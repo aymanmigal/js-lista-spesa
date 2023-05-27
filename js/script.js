@@ -16,6 +16,11 @@ const list_dom = document.getElementById('list');
 
 let i=0;
 while(i<list.length){
-    console.log(list[i]);
+    //Creo il nuovo elemento da mettere nel dom
+    //Recupero l'elemento creato nel file index in javascript
+    //Inserisco e concateno il nuovo elemento all'innerHTML di quello recuperato
+    let elemento = document.createElement('li');
+    elemento.innerText = list[i];
+    list_dom.append(elemento);
     i++;
 }
